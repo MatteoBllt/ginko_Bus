@@ -16,11 +16,6 @@ var appShellFiles = [
   'icons/icon-512.png',
   'icons/maskable_icon.png'
 ];
-var gamesImages = [];
-for(var i=0; i<games.length; i++) {
-  gamesImages.push('data/img/'+games[i].slug+'.jpg');
-}
-var contentToCache = appShellFiles.concat(gamesImages);
 
 // Installing Service Worker
 self.addEventListener('install', function(e) {
